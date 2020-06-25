@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+#t.string :title
+#t.string :images, array: true
+#t.text :desc
+#t.string :details, array: true
+#t.string :githubRepoUrl
+#t.string :demoVideoUrl
+
+Project.destroy_all
+
