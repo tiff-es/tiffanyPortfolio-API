@@ -1,4 +1,4 @@
-class ProjectController < ApplicationController
+class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all
@@ -26,7 +26,7 @@ class ProjectController < ApplicationController
 
   private
   def project_params
-    params.require(:project).permit(:title, :images, :desc, :details, :githubUrl, :demoVideoUrl)
+    params.require(:projects).permit(:title, :images, :desc, :details, :githubUrl, :demoVideoUrl)
   end
 end
 
